@@ -10,7 +10,7 @@
         $conn->exec("set names utf8");
         
         $list = array();
-        if(isset($_GET['retornarImagem'])&& $_GET['retornarImagem']=='sim'){
+        if(isset($_GET['retornar_imagem'])&& $_GET['retornar_imagem']=='sim'){
             $stmt =$conn->prepare("
                 SELECT id,
                        nome,
